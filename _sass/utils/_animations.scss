@@ -1,0 +1,198 @@
+// External lib
+// scss-lint:disable SelectorFormat
+@keyframes(cd-bounce-1) {
+
+  0% {
+    opacity: 0;
+    transform: scale 0.5;
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale 1.2;
+  }
+
+  100% {
+    transform: scale 1;
+  }
+}
+
+@keyframes(cd-bounce-2) {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateX(20px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes(cd-bounce-2-inverse) {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateX(-20px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+
+
+.animated {
+  animation-fill-mode: both;
+  animation-duration: 1s;
+}
+
+.animated.hinge {
+  animation-duration: 2s;
+}
+
+/* Animation Delays */
+.delay {
+  animation-delay: 0.3s;
+}
+
+.delay-three {
+  animation-delay: 0.6s;
+}
+
+.delay-two {
+  animation-delay: 1s;
+}
+
+.delay-one {
+  animation-delay: 1.5s;
+}
+
+/* .bounceIn */
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.bounceIn {
+  animation-name: bounceIn;
+}
+
+/* .fadeIn */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+/* .fadeInUp */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+/* .fadeInDown */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+}
+
+/* .fadeInLeft */
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fadeInLeft {
+  animation-name: fadeInLeft;
+}
+
+/* .fadeOutLeft */
+@keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+}
+
+.animated.fadeOutLeft {
+  animation-name: fadeOutLeft;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated.fadeOut {
+  animation-name: fadeOut;
+}

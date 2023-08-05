@@ -1,0 +1,22 @@
+.gallery {
+ display: flex;
+ flex-wrap: wrap;
+
+ &__item {
+   margin: .5rem;
+   width: calc(50% - 1rem);
+
+   @include mq($bp-small) {
+     width: calc(25% - 1rem);
+   }
+
+   img {
+      width: 100%;
+   }
+
+   &:before {
+      border-bottom: 0;
+      background-color: transparent;
+   }
+ }
+}

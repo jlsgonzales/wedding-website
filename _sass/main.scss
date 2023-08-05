@@ -1,0 +1,59 @@
+@charset 'utf-8';
+
+// Variables
+$base-font-family: 'Raleway', sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 500;
+
+$secondary-font-family: 'Josefin Slab', serif;
+
+$small-font-size:  $base-font-size * 0.75;
+$base-line-height: 1.5;
+
+$spacing-unit:     1.5rem;
+
+$dark-color:      #3b4654;
+$light-color:     #f8f8ff; // ivory
+$grey-color:       #828282;
+
+$background-color: $light-color;
+$highlight-color: #9b4dca;
+
+// Width of the content area
+$content-width:    800px;
+
+// Breakpoints
+$bp-small:    680px;
+$bp-medium:    (calc($content-width + ($spacing-unit*2)));
+
+
+
+@mixin mq($resolution) {
+  @media screen and (min-width: $resolution) {
+    @content;
+  }
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+  // Vendor
+  'vendor/photoswipe/main',
+  'vendor/photoswipe/default-skin/main',
+  // Utils
+  'utils/visually-hidden',
+  'utils/animations',
+  'utils/media-object',
+  // Scaffolding
+  'milligram',
+  'base',
+  'layout',
+  'header',
+  'footer',
+  // Components
+  'components/primary-nav',
+  'components/timeline',
+  'components/hero',
+  'components/img-banner',
+  'components/link-leader',
+  'components/gallery';
+;

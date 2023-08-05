@@ -1,0 +1,21 @@
+.footer {
+  font-size: $small-font-size;
+  padding-top: 0;
+  margin: $spacing-unit * 3 0;
+  display: block;
+  @extend %clearfix;
+
+  &__left {
+    float: left;
+    width: 60%;
+  }
+
+  &__right {
+    float: left;
+    width: 30%;
+  }
+
+  .footer__cta {
+    text-align: right;
+  }
+}

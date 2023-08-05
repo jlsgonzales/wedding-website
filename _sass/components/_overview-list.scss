@@ -1,0 +1,13 @@
+.overview-list {
+  list-style: none;
+  padding: 0;
+  margin: $spacing-unit * 2 0;
+
+  &__item {
+    margin-bottom: $spacing-unit * 2;
+
+    &::after {
+      content: '---';
+    }
+  }
+}

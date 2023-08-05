@@ -1,0 +1,28 @@
+.link-leader-container {
+  position: relative;
+}
+
+.link-leader {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: $light-color;
+
+  a {
+    color: $light-color;
+  }
+
+  &--inverse {
+
+    &,
+    a {
+      color: $highlight-color;
+    }
+
+    &:hover::after {
+      background: $highlight-color;
+    }
+  }
+}

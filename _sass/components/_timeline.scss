@@ -1,0 +1,215 @@
+.cd-container {
+  margin: 10rem auto;
+
+  &::after {
+    @extend %clearfix;
+  }
+}
+
+.cd-date {
+  display: block;
+  float: none;
+  width: 100%;
+}
+
+.cd-container {
+  position: relative;
+
+  &::before {
+    content: ' ';
+    width: 20px;
+    height: 4px;
+    position: absolute;
+    top: 0;
+    left: 28px;
+    background: $dark-color;
+
+    @include mq($bp-small) {
+      left: 50%;
+      margin-left: -10px;
+    }
+  }
+
+  &::after {
+    content: ' ';
+    width: 20px;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 28px;
+    background: $dark-color;
+
+    @include mq($bp-small) {
+      left: 50%;
+      margin-left: -10px;
+    }
+  }
+}
+
+.cd-timeline {
+  position: relative;
+  padding: 2rem 0 4rem;
+  margin: 2rem auto;
+  max-width: 800px;
+
+  @include mq($bp-small) {
+    margin: 3rem auto;
+  }
+
+  &::before {
+    /* this is the vertical line */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 37px;
+    height: 100%;
+    width: 4px;
+    background: $dark-color;
+
+    @include mq($bp-small) {
+      left: 50%;
+      margin-left: -2px;
+    }
+  }
+}
+
+.cd-timeline-block {
+  @extend %clearfix;
+  position: relative;
+  margin: 2em 1em 2em 3em;
+  opacity: 0;
+
+  @include mq($bp-small) {
+    margin: 20rem 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.cd-timeline-img {
+  position: absolute;
+  top: 10px;
+  left: -50px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: $dark-color;
+
+  @include mq($bp-small) {
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    margin-left: -50px;
+    /* Force Hardware Acceleration in WebKit */
+    // scss-lint:disable VendorPrefix
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    // scss-lint:enable VendorPrefix
+
+    .cssanimations &.is-hidden {
+      visibility: hidden;
+    }
+
+    .cssanimations &.bounce-in {
+      visibility: visible;
+      animation: cd-bounce-1 0.6s;
+    }
+  }
+
+  img {
+    display: block;
+    width: 48px;
+    height: 48px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    margin-left: -24px;
+    margin-top: -24px;
+  }
+}
+
+.cd-timeline-content {
+  @extend %clearfix;
+  position: relative;
+  margin-left: 60px;
+  padding: 1em 0;
+  text-align: center;
+
+  @include mq($bp-small) {
+    margin-left: 0;
+    padding: 0 0 0 1.5em;
+    width: 45%;
+
+    &::before {
+      top: 24px;
+      left: 100%;
+      border-color: transparent;
+    }
+
+    &:nth-child(2) {
+      padding: 0 2rem 0 0;
+    }
+
+    .cd-date {
+      position: absolute;
+      width: 100%;
+      left: 130%;
+      top: 0;
+    }
+
+    .cd-timeline-block:nth-child(even) & {
+      float: right;
+      padding: 0 0 0 3rem;
+
+
+      &::before {
+        top: 24px;
+        left: auto;
+        right: 100%;
+        border-color: transparent;
+      }
+
+      .cd-date {
+        left: auto;
+        right: 130%;
+        text-align: centre;
+      }
+    }
+
+    .cssanimations &.is-hidden {
+      visibility: hidden;
+    }
+
+    .cssanimations &.bounce-in {
+      visibility: visible;
+      animation: cd-bounce-2 0.6s;
+    }
+  }
+
+  .cd-date {
+    float: left;
+    padding: 0 0 0.8em;
+    opacity: 0.7;
+  }
+}
+
+@include mq($bp-small) {
+  /* inverse bounce effect on even content blocks */
+  .cssanimations .cd-timeline-block:nth-child(even) .cd-timeline-content.bounce-in {
+    animation: cd-bounce-2-inverse 0.6s;
+  }
+}

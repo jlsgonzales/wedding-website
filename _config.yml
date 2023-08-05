@@ -1,0 +1,33 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+description: > # this means to ignore newlines until "baseurl:"
+  We're getting married on 29th September 2016!
+
+baseurl: "" # the subpath of your site, e.g. /blog
+
+url: "http://barryandgillian.wedding/" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+
+# only build incrementally
+incremental: true
+
+# exclude node_modules from jekyll generation
+exclude: [node_modules, Gulpfile.js, package.json, package-lock.json, README.md, logo.sketch, Gemfile, Gemfile.lock, images]
+
+# do not delete these folders when regenerating jekyll site
+keep_files: [css, js, images]
+
+# compress html
+compress_html:
+  clippings: all
+  comments:  ["<!-- ", " -->"]
+  endings:   all
+  blanklines: false

@@ -1,0 +1,22 @@
+.img-banner {
+  min-height: 175px;
+  height: 40vw;
+  background-color: $light-color;
+  background-position: center;
+  background-size: cover;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  position: relative;
+  overflow: hidden;
+
+  @include mq($bp-small) {
+    height: 50vw;
+  }
+
+  .bg-tint {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba($dark-color, 0.5);
+  }
+}

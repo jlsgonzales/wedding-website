@@ -1,0 +1,126 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+.strip {
+  background-color: $dark-color;
+  color: $light-color;
+  margin: 2rem 0;
+  padding: 4rem 0;
+
+  a {
+    color: $grey-color;
+
+    &:hover {
+      color: $light-color;
+      border-bottom-color: $light-color;
+    }
+  }
+}
+
+.wrapper {
+  max-width: $content-width;
+  margin: auto;
+  padding: 0 2rem 4rem;
+  position: relative;
+}
+
+.section__header {
+  margin-bottom: 3rem;
+  text-align: left;
+  border-bottom: 2px solid $dark-color;
+  padding-top: 2rem;
+
+  .strip & {
+    border-bottom: 1px solid $light-color;
+  }
+}
+
+.section__image {
+  margin: 1rem auto 3rem;
+  display: block;
+}
+
+.for-large {
+  display: none;
+}
+
+.no-padding-bottom {
+  padding-bottom: 0;
+}
+
+.button {
+  margin: 3rem auto 3rem;
+  display: block;
+  max-width: 300px;
+}
+
+
+@include mq($bp-medium) {
+
+  .wrapper {
+    padding: 0;
+  }
+
+  .for-small {
+    display: none;
+  }
+
+  .for-large {
+    display: block;
+  }
+}
+
+// Responsive Google Maps Embed
+.overlay {
+   background: transparent;
+   position: relative;
+   width: 100%;
+   height: 600px; /* your iframe height */
+   top: 600px;  /* your iframe height */
+   margin-top: -600px;  /* your iframe height */
+   z-index: 9;
+}
+
+.google-maps {
+  position: relative;
+  padding-bottom: 75%; // This is the aspect ratio
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 4rem;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+// Gallery
+.gallery__item img {
+  border: 1px solid $grey-color;
+}
+
+.note {
+  margin-bottom: 1rem;
+  padding: 2rem;
+  background: $light-color;
+
+
+  &, a {
+    color: $dark-color!important;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,174 @@
+/**
+ * Box sizing
+ */
+* {
+  box-sizing: border-box;
+}
+
+/**
+ * Reset some basic elements
+ */
+blockquote,
+body,
+dd,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+ol,
+p,
+pre,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Basic styling
+ */
+body {
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  color: $dark-color;
+  background-color: $background-color;
+  // These prefixes cannot be added via autoprefixer
+  // scss-lint:disable VendorPrefix
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  // scss-lint:enable VendorPrefix
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $secondary-font-family;
+  text-align: center;
+  letter-spacing: -2px;
+}
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+%vertical-rhythm,
+blockquote,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+p,
+pre,
+ul {
+  margin-bottom: $spacing-unit / 2;
+}
+
+/**
+ * Images
+ */
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+/**
+ * Figures
+ */
+figure > img {
+  display: block;
+}
+
+figcaption {
+  font-size: $small-font-size;
+}
+
+/**
+ * Lists
+ */
+ol,
+ul {
+  margin: 4rem 2rem;
+  list-style: outside;
+}
+
+li {
+  > ol,
+  > ul {
+    margin-bottom: 0;
+  }
+}
+
+/**
+ * Headings
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $base-font-weight;
+}
+
+/**
+ * Default Paragraph styling
+ */
+p {
+  margin-bottom: $spacing-unit;
+}
+
+/**
+ * Default Link styling
+ */
+a {
+  color: $highlight-color;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 3px;
+
+  &:before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $highlight-color;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+
+  }
+
+  &:not(.button):hover {
+    color: $highlight-color;
+
+    &:before {
+      visibility: visible;
+      transform: scaleX(1);
+    }
+  }
+}
+
+// Gallery Share links
+.pswp__share-tooltip a:hover {
+  color: #333!important;
+  background-color: white;
+  text-decoration: underline;
+}
+
+.pswp__share-tooltip a:before {
+  display: none!important;
+}
