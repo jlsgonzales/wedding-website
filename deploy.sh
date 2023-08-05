@@ -15,7 +15,7 @@ git checkout $DEST_BRANCH
 # git rm -qr .
 cp -r $TMP_DIR/. .
 # Delete this script from the output
-rm ./$SELF
+# rm ./$SELF
 rm -r $TMP_DIR
 git add -A
 git commit -m "Published updates"
