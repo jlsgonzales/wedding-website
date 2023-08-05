@@ -11,7 +11,7 @@ description: > # this means to ignore newlines until "baseurl:"
 
 baseurl: "" # the subpath of your site, e.g. /blog
 
-url: "https://jlsgonzales.github.io/wedding-website/" # the base hostname & protocol for your site
+url: "http://barryandgillian.wedding/" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
@@ -20,7 +20,7 @@ markdown: kramdown
 incremental: true
 
 # exclude node_modules from jekyll generation
-exclude: [node_modules, Gulpfile.js, package.json, package-lock.json, README.md, logo.sketch, Gemfile, Gemfile.lock, images]
+exclude: [node_modules, Gulpfile.js, package.json, package-lock.json, README.md, logo.sketch, Gemfile, Gemfile.lock]
 
 # do not delete these folders when regenerating jekyll site
 keep_files: [css, js, images]
