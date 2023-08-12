@@ -15,7 +15,9 @@ url: "http://barryandgillian.wedding/" # the base hostname & protocol for your s
 
 
 #images
-imagesBannerDressCode: "https://drive.google.com/uc?export=view&id=1Uak93hLGUufEm3e6JgISJorbsQuVCSdR"
+imagesBannerRSVP: "https://drive.google.com/uc?export=view&id=1MRwaGymJo-JSE8-eE2WUyl90oaRh4OjK"
+imagesBannerDressCode: "https://drive.google.com/uc?export=view&id=1byzcjPDQL2A8gpwcVpXIcy1vX7TO21rG"
+imagesBannerAccomodation: "https://drive.google.com/uc?export=view&id=1Uak93hLGUufEm3e6JgISJorbsQuVCSdR"
 imagesBannerLocation: "https://drive.google.com/uc?export=view&id=1uPMSc2HEGX7KzR8f0UhJs18XG2fRZmKn"
 imagesBannerSchedule: "https://drive.google.com/uc?export=view&id=14qsVTK2bKw_fvMxzdwOb2yzjB5Wj_Iyd"
 # Build settings
