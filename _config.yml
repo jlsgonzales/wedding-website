@@ -13,6 +13,10 @@ baseurl: "" # the subpath of your site, e.g. /blog
 
 url: "http://barryandgillian.wedding/" # the base hostname & protocol for your site
 
+
+#images
+imagesBannerLocation: "https://drive.google.com/uc?export=view&id=1uPMSc2HEGX7KzR8f0UhJs18XG2fRZmKn"
+imagesBannerSchedule: "https://drive.google.com/uc?export=view&id=14qsVTK2bKw_fvMxzdwOb2yzjB5Wj_Iyd"
 # Build settings
 markdown: kramdown
 
