@@ -28,21 +28,21 @@
   background-position: center 0;
   min-height: 100vh;
   margin-top: 0;
-  background-image: url('/images/b&g/hero_z8iyod_ar_4_3,c_fill__c_scale,w_750.jpg');
+  background-image: url('{{site.imagesBannerTop}}');
 
   @media (min-width: 468px) {
-    background-image: url('/images/b&g/hero_z8iyod_ar_4_3,c_fill__c_scale,w_1302.jpg');
+    background-image: url('{{site.imagesBannerTop}}');
   }
 
   @media (min-width: 960px) {
-    background-image: url('/images/b&g/hero_z8iyod_ar_16_9,c_fill__c_scale,w_1870.jpg');
+    background-image: url('{{site.imagesBannerTop}}');
   }
 
   &--review {
-    background-image: url('/images/b&g/Gillian_Barry335_chfc4u_c_scale,w_712.jpg');
+    background-image: url('{{site.imagesBannerTop}}');
 
     @media (min-width: 1200px) {
-      background-image: url('/images/b&g/Gillian_Barry335_chfc4u_c_scale,w_1400.jpg');
+      background-image: url('{{site.imagesBannerTop}}');
     }
   }
 
