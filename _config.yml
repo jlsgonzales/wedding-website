@@ -21,6 +21,17 @@ imagesBannerAccomodation: "https://drive.google.com/uc?export=view&id=1Uak93hLGU
 imagesBannerLocation: "https://drive.google.com/uc?export=view&id=1uPMSc2HEGX7KzR8f0UhJs18XG2fRZmKn"
 imagesBannerSchedule: "https://drive.google.com/uc?export=view&id=14qsVTK2bKw_fvMxzdwOb2yzjB5Wj_Iyd"
 imagesBannerTop: "https://drive.google.com/uc?export=view&id=1HCMOPx_hktq6KJHx9ommy7V5XHxRseC6"
+
+#icons
+iconsScheduleCeremony: "https://drive.google.com/uc?export=view&id=1znsX1U_3Yq7ZkULk1PvDcdl5M_9CROkV"
+iconsScheduleDrinks: "https://drive.google.com/uc?export=view&id=1P9mHMswDdsKtr0fqKMYNWNetkkKtp_8U"
+iconsScheduleDinner: "https://drive.google.com/uc?export=view&id=11P0XerddKl3vQSSm6cKqT9Go521DtsJh"
+iconsScheduleSpeeches: "https://drive.google.com/uc?export=view&id=1inEQGzG0nztxRiJB0DNEIvgeKlM1a226"
+iconsScheduleMusic: "https://drive.google.com/uc?export=view&id=10AG1cyKPK_QGBTt3h8HFTeQBGHcVEXe0"
+iconsScheduleSupper: "https://drive.google.com/uc?export=view&id=1KwV2cIoBThvzEcxdse-J0IGNFAenE_Nu"
+iconsScheduleSleep: "https://drive.google.com/uc?export=view&id=1xTdtejDGx2ph-SGvhknq0N6LYHqDyDFX"
+
+
 # Build settings
 markdown: kramdown
 
