@@ -1,3 +1,6 @@
+// variables
+$imagesBannerTop: url('https://drive.google.com/uc?export=view&id=1HCMOPx_hktq6KJHx9ommy7V5XHxRseC6');
+
 .hero-flex-wrap {
   height: 100vh;
   display: flex;
@@ -28,21 +31,21 @@
   background-position: center 0;
   min-height: 100vh;
   margin-top: 0;
-  background-image: url('{{site.imagesBannerTop}}');
+  background-image: $imagesBannerTop;
 
   @media (min-width: 468px) {
-    background-image: url('{{site.imagesBannerTop}}');
+    background-image: $imagesBannerTop;
   }
 
   @media (min-width: 960px) {
-    background-image: url('{{site.imagesBannerTop}}');
+    background-image: $imagesBannerTop;
   }
 
   &--review {
-    background-image: url('{{site.imagesBannerTop}}');
+    background-image: $imagesBannerTop;
 
     @media (min-width: 1200px) {
-      background-image: url('{{site.imagesBannerTop}}');
+      background-image: url('/images/b&g/Gillian_Barry335_chfc4u_c_scale,w_1400.jpg');
     }
   }
 
