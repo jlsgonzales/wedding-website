@@ -1,5 +1,5 @@
 // variables
-$imagesBannerTop: url('https://drive.google.com/uc?export=view&id=1hjzsyYzRvumXfQ4GGTHQrmzcsFlPSETu');
+$imagesBannerTop: url('https://drive.google.com/uc?export=view&id=1rvXMVCkdpntHu-SEuILLCmXBqwFaqPWS');
 
 .hero-flex-wrap {
   height: 100vh;
@@ -28,7 +28,7 @@ $imagesBannerTop: url('https://drive.google.com/uc?export=view&id=1hjzsyYzRvumXf
 .hero-wrap {
   position: relative;
   background-size: cover;
-  background-position: center 0;
+  background-position: center bottom;
   min-height: 100vh;
   margin-top: 0;
   background-image: $imagesBannerTop;
