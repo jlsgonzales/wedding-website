@@ -1,7 +1,5 @@
 // variables
-$imagesBannerTop: url('https://drive.google.com/uc?export=view&id=1rvXMVCkdpntHu-SEuILLCmXBqwFaqPWS');
-$imagesBannerTopW480: url('https://drive.google.com/uc?export=view&id=1J0xUzdjxMoWSCgT2opk3lXmgbNz9AFHv');
-$imagesBannerTopW320: url('https://drive.google.com/uc?export=view&id=1L42Ca55vltSoeXAedmcRdNJS8SJb66Jx');
+$imagesBannerTop: url('https://drive.google.com/uc?export=view&id=10J2-dmXrX9-zBPxJrjvgfCfVi2CSF0Pi');
 
 .hero-flex-wrap {
   height: 100vh;
@@ -33,10 +31,10 @@ $imagesBannerTopW320: url('https://drive.google.com/uc?export=view&id=1L42Ca55vl
   background-position: center bottom;
   min-height: 100vh;
   margin-top: 0;
-  background-image: $imagesBannerTopW320;
+  background-image: $imagesBannerTop;
 
   @media (min-width: 468px) {
-    background-image: $imagesBannerTopW480;
+    background-image: $imagesBannerTop;
   }
 
   @media (min-width: 960px) {
