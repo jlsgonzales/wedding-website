@@ -1,6 +1,5 @@
 .img-banner {
   min-height: 175px;
-  // height: 40vw;
   background-color: $light-color;
   background-position: center;
   background-size: cover;
@@ -8,6 +7,12 @@
   margin-bottom: 3rem;
   position: relative;
   overflow: hidden;
+
+  @media (min-width: 960px) {
+    background-image: $imagesBannerTop;
+    height: 40vw;
+
+  }
 
   @include mq($bp-small) {
     height: 50vw;
