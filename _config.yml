@@ -11,7 +11,7 @@ description: > # this means to ignore newlines until "baseurl:"
 
 baseurl: "" # the subpath of your site, e.g. /blog
 
-url: "http://barryandgillian.wedding/" # the base hostname & protocol for your site
+url: "https://jolowedshannah.com/" # the base hostname & protocol for your site
 
 
 #images
@@ -20,6 +20,8 @@ imagesBannerDressCode: "https://drive.google.com/uc?export=view&id=1byzcjPDQL2A8
 imagesBannerAccomodation: "https://drive.google.com/uc?export=view&id=1Uak93hLGUufEm3e6JgISJorbsQuVCSdR"
 imagesBannerLocation: "https://drive.google.com/uc?export=view&id=1uPMSc2HEGX7KzR8f0UhJs18XG2fRZmKn"
 imagesBannerSchedule: "https://drive.google.com/uc?export=view&id=14qsVTK2bKw_fvMxzdwOb2yzjB5Wj_Iyd"
+imagesBannerMeta: "https://drive.google.com/uc?export=view&id=1J0xUzdjxMoWSCgT2opk3lXmgbNz9AFHv"
+
 
 #icons
 iconsScheduleCeremony: "https://drive.google.com/uc?export=view&id=1znsX1U_3Yq7ZkULk1PvDcdl5M_9CROkV"
