@@ -25,6 +25,10 @@ body {
   }
 }
 
+.accomodation-list {
+  list-style-type: none;
+}
+
 .wrapper {
   max-width: $content-width;
   margin: auto;
