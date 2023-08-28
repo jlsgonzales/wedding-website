@@ -7,16 +7,16 @@
   margin-bottom: 3rem;
   position: relative;
   overflow: hidden;
+  text-align: center;
 
   @media (min-width: 960px) {
-    background-image: $imagesBannerTop;
-    height: 40vw;
-
+    // background-image: $imagesBannerTop;
+    // height: 40vw;
   }
 
-  @include mq($bp-small) {
-    height: 50vw;
-  }
+  // @include mq($bp-small) {
+  //   height: 50vw;
+  // }
 
   .bg-tint {
     position: absolute;
